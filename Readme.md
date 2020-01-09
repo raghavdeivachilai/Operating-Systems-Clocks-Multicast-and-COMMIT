@@ -1,6 +1,6 @@
-Clocks, Multicast, and COMMIT:
+# Clocks, Multicast, and COMMIT:
 
-Part I: Berkeley Algorithm
+## Part I: Berkeley Algorithm
 The Berkeley.cpp file should be compiled for the first part of the project. It can be compiled as follows:
 g++ -std=c++11 -o berkeley Berkeley.cpp -pthread
 The format to compile the program is: program output, port number, process id.
@@ -18,7 +18,7 @@ synchronized clock among all processes.
 It also displays the current value in file and updated value in file as I have combined this part with the
 distributed locking part of the project.
 
-Part II: Causal Ordering
+## Part II: Causal Ordering
 The files for the second part of the project can be found in the files causalordering.cpp and
 noncausal.cpp. . These files can be compiled as below:
 g++ -std=c++11 -o causalordering causalordering.cpp -pthread
@@ -36,7 +36,8 @@ process 1 will be received by process 3 and it will get delivered in the termina
 ZG70451
 number 9002). I have also shown the queue contents to show that the message from process 2 to process
 was buffered.
-Non-causal ordering:
+  
+## Non-Causal Ordering:
 g++ -std=c++11 -o noncausal noncausal.cpp -pthread
 The format to compile the program is: output filename, portnumber, the process ID, message, delay
 Here the values 0,10,5 are the delays .
@@ -54,7 +55,7 @@ second multicast from process 1 will get buffered and is shown in the buffer con
 the terminal window with port number 9002. Finally, when the first multicast reaches the process 3, it
 will get delivered and the buffer contents are shown to be empty in process 3.
 
-Part III: Distributed Lock
+## Part III: Distributed Lock
 This part is combined with the first part of the project. It is implemented using mutex locks. The
 filecounter.txt file has a value which is updated by each of the processes. Each time the berkeley.cpp
 program is run in multiple terminals; the locking ensures that only a single process enters the critical
