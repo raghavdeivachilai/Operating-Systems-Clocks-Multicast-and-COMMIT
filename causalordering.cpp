@@ -1,5 +1,3 @@
-//Raghav Deivchilai
-//ZG7051
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
@@ -265,8 +263,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-/*
-References:
-https://www.youtube.com/watch?v=lugR1CIIU4w
-https://github.com/n0nzy/multicast-causal/blob/master/main.cpp
-*/
