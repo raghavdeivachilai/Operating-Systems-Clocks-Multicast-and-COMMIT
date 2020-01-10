@@ -1,5 +1,3 @@
-//Raghav Deivchilai
-//ZG7051
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h>
@@ -214,8 +212,3 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
-/*
-References:
-https://www.geeksforgeeks.org/berkeleys-algorithm/
-https://github.com/n0nzy/time-sync/blob/master/main.c
-*/
